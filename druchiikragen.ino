@@ -4,7 +4,6 @@
 #endif
 
 #define DATAPIN 7
-
 #define PULSEPIN 3
 
 // Parameter 1 = number of pixels in strip
@@ -51,7 +50,6 @@ void setup() {
 
 void loop() {
 
-  //oneColor(strip.Color(71, 5, 95));
   int pulsepushed = digitalRead(PULSEPIN); // Read the state of the switch
   if (pulsepushed == LOW && pulseRunning == 0){
     event_activatePulse = 1;
